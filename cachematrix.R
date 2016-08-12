@@ -5,15 +5,15 @@
 ## makeCacheMatrix function creates a matrix in the cache.
 
 makeCacheMatrix <- function(x = matrix()) {
-        inver <- NULL
+        inv <- NULL
         set <- function(y) {
                 x <<- y
-                inver <<- NULL
+                inv <<- NULL
         }
         get <- function() x
-        setInverse <- function(inverse) inver <<- inverse
-        getInverse <- function() inver
-        list(set=set, get=get, setinverse=setInverse, getinverse=getInverse)
+        setInv <- function(inverse) inv <<- inverse
+        getInv <- function() inv
+        list(set=set, get=get, setinv=setInv, getinv=getInv)
 }
 
 
